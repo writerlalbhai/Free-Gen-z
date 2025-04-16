@@ -167,15 +167,3 @@ body {
   margin-top: 10px;
   font-size: 14px;
 }
-
-.login-link {
-  display: block;
-  margin-top: 20px;
-  color: #fff;
-  text-decoration: underline;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
