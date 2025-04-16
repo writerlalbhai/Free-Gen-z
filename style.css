@@ -53,3 +53,73 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00796b;
+  padding: 10px 20px;
+  color: white;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.auth button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #004d40;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hero {
+  text-align: center;
+  padding: 50px;
+  color: #004d40;
+}
+.form-box {
+  text-align: center;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+.form-box input {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-box button {
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004d40;
+  color: white;
+}
