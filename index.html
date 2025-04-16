@@ -1,0 +1,27 @@
+index.html<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gen-Z Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">Gen-Z</div>
+      <div class="nav-buttons">
+        <button onclick="showSignIn()">Sign In</button>
+        <button onclick="showSignUp()">Sign Up</button>
+      </div>
+    </div>
+    <div class="form-box">
+      <h2 id="form-title">Sign in</h2>
+      <input type="text" placeholder="Email or phone" />
+      <input type="password" placeholder="Password" />
+      <button class="main-button">Sign In</button>
+      <p class="alt">Don’t have an account? <a href="#" onclick="showSignUp()">Sign up</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
