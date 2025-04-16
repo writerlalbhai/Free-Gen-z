@@ -1,0 +1,95 @@
+main.html<!DOCTYPE html><html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gen-Z লগইন / সাইন আপ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      width: 90%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      color: #0072ff;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0072ff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .toggle {
+      text-align: center;
+      margin-top: 10px;
+      color: #0072ff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container" id="loginBox">
+    <h2 id="formTitle">লগইন করুন</h2>
+    <input type="text" id="email" placeholder="ইমেল / ফোন নাম্বার">
+    <input type="password" id="password" placeholder="পাসওয়ার্ড">
+    <button onclick="login()">প্রবেশ করুন</button>
+    <div class="toggle" onclick="toggleForm()">নতুন ব্যবহারকারী? সাইন আপ করুন</div>
+  </div>  <script>
+    let isLogin = true;
+
+    function toggleForm() {
+      const title = document.getElementById('formTitle');
+      const button = document.querySelector('button');
+      const toggle = document.querySelector('.toggle');
+
+      if (isLogin) {
+        title.innerText = 'সাইন আপ করুন';
+        button.innerText = 'সাইন আপ';
+        toggle.innerText = 'ইতিমধ্যেই একাউন্ট আছে? লগইন করুন';
+        isLogin = false;
+      } else {
+        title.innerText = 'লগইন করুন';
+        button.innerText = 'প্রবেশ করুন';
+        toggle.innerText = 'নতুন ব্যবহারকারী? সাইন আপ করুন';
+        isLogin = true;
+      }
+    }
+
+    function login() {
+      // এক্ষানে আপনি ইচ্ছেমতো লগইন যাচাই যোগ করতে পারেন
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      if (email && password) {
+        // প্রবেশ সফল হলে মেইন পেইজে পাঠানো হবে
+        window.location.href = "main.html"; // আপনার মূল সাইটের পেইজ
+      } else {
+        alert("অনুগ্রহ করে সব ঘর পূরণ করুন।");
+      }
+    }
+  </script></body>
+</html>
